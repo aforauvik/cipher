@@ -120,6 +120,7 @@ export function CipherForm() {
 						className="px-4 bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 border-slate-600/50"
 					>
 						<RotateCcw className="w-4 h-4" />
+						Start Over
 					</Button>
 				</div>
 
