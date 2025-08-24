@@ -1,4 +1,5 @@
 import "./globals.css";
+import {Toaster} from "sonner";
 
 export const metadata = {
 	title: "Mini Cipher - Advanced Text Encryption",
@@ -21,7 +22,10 @@ export const viewport = {
 export default function RootLayout({children}) {
 	return (
 		<html lang="en">
-			<body className="antialiased">{children}</body>
+			<body className="antialiased">
+				{children}
+				<Toaster />
+			</body>
 		</html>
 	);
 }

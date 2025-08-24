@@ -7,6 +7,7 @@ import {Label} from "@/components/ui/label";
 import {Textarea} from "@/components/ui/textarea";
 import {useCipher} from "@/hooks/useCipher";
 import {AlertCircle, Lock, Unlock, RotateCcw, Copy} from "lucide-react";
+import {toast} from "sonner";
 
 export function CipherForm() {
 	const {
@@ -27,8 +28,10 @@ export function CipherForm() {
 		if (result) {
 			try {
 				await navigator.clipboard.writeText(result);
+				toast.success("Message copied to clipboard!");
 			} catch (err) {
 				console.error("Failed to copy text: ", err);
+				toast.error("Failed to copy text");
 			}
 		}
 	};
