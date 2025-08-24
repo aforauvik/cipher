@@ -1,12 +1,12 @@
 import "./globals.css";
 
 export const metadata = {
-	title: "Mini Cipher Pro - Advanced Text Encryption",
+	title: "Mini Cipher - Advanced Text Encryption",
 	description:
 		"Secure text encryption with dual-key authentication system. Built with Next.js, Tailwind CSS, and shadcn/ui. Your data never leaves your device.",
 	keywords:
 		"encryption, cipher, security, text encryption, client-side encryption, cryptography",
-	authors: [{name: "Mini Cipher Pro"}],
+	authors: [{name: "Mini Cipher"}],
 	robots: "index, follow",
 	icons: {
 		icon: "/favicon.ico",
