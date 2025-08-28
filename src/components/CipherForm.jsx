@@ -37,7 +37,7 @@ export function CipherForm() {
 	};
 
 	return (
-		<Card className="w-full max-w-3xl mx-auto bg-slate-900/50 border-slate-700/50 backdrop-blur-sm">
+		<Card className="w-full max-w-3xl mx-auto bg-slate-950/50 border-slate-700/50 backdrop-blur-sm">
 			<CardHeader className="text-center">
 				<CardTitle className="text-2xl font-bold text-white flex items-center justify-center gap-2">
 					<Lock className="w-6 h-6" />
@@ -102,7 +102,7 @@ export function CipherForm() {
 				<div className="flex flex-col sm:flex-row gap-3">
 					<Button
 						onClick={encrypt}
-						className="flex-1 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white border-0 shadow-lg"
+						className="flex-1 bg-green-700 hover:bg-green-800 hover:text-white text-white border-0 shadow-lg"
 					>
 						<Lock className="w-4 h-4 mr-2" />
 						Encrypt
@@ -111,7 +111,7 @@ export function CipherForm() {
 					<Button
 						onClick={decrypt}
 						variant="outline"
-						className="flex-1 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white border-0 shadow-lg"
+						className="flex-1 bg-blue-700 hover:bg-blue-800 hover:text-white text-white border-0 shadow-lg"
 					>
 						<Unlock className="w-4 h-4 mr-2" />
 						Decrypt
@@ -120,7 +120,7 @@ export function CipherForm() {
 					<Button
 						onClick={clearAll}
 						variant="outline"
-						className="px-4 bg-slate-700/50 hover:bg-slate-600/50 text-slate-300 border-slate-600/50"
+						className="px-4 bg-slate-800 hover:bg-slate-900 text-white hover:text-white border-slate-600/50"
 					>
 						<RotateCcw className="w-4 h-4" />
 						Start Over
